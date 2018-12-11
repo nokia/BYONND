@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>BYONND</title>
+        <link rel="icon" type="image/png" href="dist/assets/img/favicon.ico" />
+    </head>
+
+    <body style="background-color: grey;">
+        <canvas id="canvas" width="1100" height="1200" style="background-color: white;"></canvas>
+
+        <script src="dist/bundle.js"></script>
+        <script type="text/javascript">
+            let canvas = document.querySelector("#canvas");
+            let neuralNetworkBuilder = new NeuralNetworkBuilder(canvas);
+
+            /*let neuralNetwork = neuralNetworkBuilder.build("mlp");
+            neuralNetwork.addLayer(25);
+            neuralNetwork.addLayer(20);
+            neuralNetwork.addLayer(15);
+            neuralNetwork.addLayer(5);*/
+            
+            /*let neuralNetwork = neuralNetworkBuilder.build("mlp");
+            neuralNetwork.addLayer(2500);
+            neuralNetwork.addLayer(1800);
+            neuralNetwork.addLayer(1100);
+            neuralNetwork.addLayer(600);
+            neuralNetwork.addLayer(26);*/
+            
+
+            /*let neuralNetwork = neuralNetworkBuilder.build("mlp");
+            neuralNetwork.define([2500, 1800, 1100, 600, 26]);
+            neuralNetwork.layers[neuralNetwork.layers.length-1].neurons[0].activate();*/
+
+
+            let neuralNetwork = neuralNetworkBuilder.build("cnn");
+            neuralNetwork.addLayer(50, 50, 1);
+            neuralNetwork.addLayer(25, 25, 2);
+            neuralNetwork.addLayer(12, 12, 4);
+            neuralNetwork.addLayer(6, 6, 8);
+            neuralNetwork.addLayer(36);
+            neuralNetwork.addLayer(26);
+ 
+            //neuralNetwork.layers[neuralNetwork.layers.length-1].neurons[0][2].activate();
+            /*let neuralNetwork = neuralNetworkBuilder.build("cnn");
+            neuralNetwork.define([[50, 50, 2], [25, 25, 4], [12, 12, 8], [6, 6, 12], [36, 1, 0], [26, 1, 0]]);
+            neuralNetwork.layers[neuralNetwork.layers.length-1].neurons[0][2].activate();*/
+            
+            /*let neuralNetwork = neuralNetworkBuilder.build("rnn");
+            //neuralNetwork.define(5, 2, ["h","e","l","l","o","w"]);
+            //neuralNetwork.define(15, 2, ["h","e","l","l","o","w","o","r","l","d","!","h","e","l","l","o"]);
+            neuralNetwork.define(10, 2, ["h","e","l","l","o","w","o","r","l","d","!"], "vertical");
+            //neuralNetwork.define(10, 2, ["h","e","l","l","o","w","o","r","l","d","!"], "horizontal");
+            //neuralNetwork.define(10, 2, ["1.12","1.35","1.45","2.23","2.78","4.76","5.98","6.00","7.14","7.90","8.42"], "vertical");
+            //neuralNetwork.define(15, 2, ["h","e","l","l","o","w","o","r","l","d","!","h","e","l","l","o"]);
+            */
+
+            neuralNetwork.draw();
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+    "rules": {
+        "semicolon": true,
+        "quotemark": [
+            true,
+            "double"
+        ],
+        "curly": true,
+        "member-access": true,
+        "no-debugger": true,
+        "no-console": [
+            true,
+            "log"
+        ],
+        "prefer-const": true,
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "indent": [
+            true,
+            "tabs"
+        ]
+    }
+}

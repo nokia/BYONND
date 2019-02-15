@@ -11,7 +11,7 @@ This designer can handle 3 types of neural networks:
 ## How to use?
 The only thing you need is an HTML Canvas:
 
-### Delcare your canvas
+### Declare your canvas
 
 ```
 <canvas id="canvas" width="1100" height="1200" style="background-color: white;"></canvas>

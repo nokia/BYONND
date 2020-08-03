@@ -134,3 +134,8 @@ neuralNetwork.define(10, 2, ["h","e","l","l","o","w","o","r","l","d","!"], "vert
 ````
 ### Here's the result:
 ![rnn](http://sebferrer.fr/byonndimgs/rnn2.png)
+
+
+## License
+
+This project is licensed under the BSD-3-Clause license - see the [LICENSE](https://github.com/nokia/BYONND/blob/master/LICENSE).
